@@ -34,6 +34,17 @@ javac Test.java
 java Test
 output void main
 ```
+### Modifiers (Access Modifiers)
+- Public : It's a park which can be accessed by anyone in game (Class);
+- Private : It's like a hideout which can be accessed only by same team members (same class members);
+- Protected : It's like a GTA online Closed friends server;
+- Default : Everyone in the packadge can easily access this.
+
+### Packages
+Packages are like folders which contains a specific assigned part of your code.
+- Helps you code readablity
+- Increase maintainabilty l
+- Avoide name conflicts
 
 ### Method to run Java Files on Command line
 ```
@@ -41,6 +52,47 @@ output void main
 
 - java FileNameHere                 // Will exicute the file directly here
 
+```
+## Method Overloading & Overriding
+### Overloading
+Method Overloading is where we use same method with diffrent parameters.
+```java
+class Player {
+    void attack() { 
+        System.out.println("Basic punch!"); 
+    }
+
+    void attack(String weapon) { 
+        System.out.println("Attack with " + weapon + "!");
+    }
+
+    void attack(int powerLevel) {
+        System.out.println("Supercharged attack with power level " + powerLevel + "!");
+    }
+}
+```
+### Overriding
+Method Overriding is where we use same methods and parameters and the override the functions for that perticular class.
+```java
+class Character {
+    void move() { 
+        System.out.println("Generic movement"); 
+    }
+}
+
+class Ninja extends Character {
+    @Override 
+    void move() {
+        System.out.println("Ninja vanishes in a puff of smoke!"); 
+    }
+}
+
+class Wizard extends Character {
+    @Override
+    void move() {
+        System.out.println("Wizard teleports!");
+    }
+}
 ```
 ## Constructers
 ```java
@@ -59,6 +111,7 @@ public class Student {
 }
 ```
 ## Input in Java
+It is important to close scannes in java using `scanner.close();`
 
 ```java
 import java.util.Scanner;  // Import the Scanner class
@@ -69,10 +122,20 @@ class Main {
     System.out.println("Enter username");
 
     String userName = myObj.nextLine();  // Read user input
-	Int num = myObj.nextInt(); 			// Read Input as Integer
+	int num = myObj.nextInt(); 			// Read Input as Integer
     System.out.println("Username is: " + userName);  // Output user input
+    myObj.close();
   }
 }
+```
+### Rule Switch
+```java
+int dayOfWeek = 3;
+String dayType = switch (dayOfWeek) {
+    case 1, 7 -> "Weekend";
+    case 2, 3, 4, 5, 6 -> "Weekday";
+    default -> "Invalid day";
+};
 ```
 
 # OOPs
@@ -82,4 +145,9 @@ Objects are the entities of class which are stored under class.
 
 ## Principals of OOPs
 
+## Accesibity Table                             
+- Private 
+- Public 
+- Protected
+- Default
 
