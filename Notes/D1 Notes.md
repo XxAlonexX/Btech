@@ -10,7 +10,7 @@ java Test.java
 java Test
 RuntimeException : NoSuchMethodError.main
 ```
-![fig1.jpeg]
+![Figure1](Figures/Figure_1.jpg)
 
 2. We can declare `'String[]'`  in any acceptable form.
 - `main(String []args)`
@@ -38,13 +38,13 @@ output void main
 - Public : It's a park which can be accessed by anyone in game (Class);
 - Private : It's like a hideout which can be accessed only by same team members (same class members);
 - Protected : It's like a GTA online Closed friends server;
-- Default : Everyone in the packadge can easily access this.
+- Default : Everyone in the package can easily access this.
 
 ### Packages
 Packages are like folders which contains a specific assigned part of your code.
-- Helps you code readablity
-- Increase maintainabilty l
-- Avoide name conflicts
+- Helps you code readability
+- Increase maintainability l
+- Avoided name conflicts
 
 ### Method to run Java Files on Command line
 ```
@@ -53,9 +53,21 @@ Packages are like folders which contains a specific assigned part of your code.
 - java FileNameHere                 // Will exicute the file directly here
 
 ```
+## String Buffer 
+The `StringBuffer` allows you to modify the description without creating entirely new strings each time, making it efficient for building complex descriptions.
+> It's like a character from game Detroit where every charcter's backstory is blank and will update as you progress and make choices.
+#### Commands to use StringBuffer
+- `.append();`
+- `.insert();`
 ## Method Overloading & Overriding
+
 ### Overloading
-Method Overloading is where we use same method with diffrent parameters.
+Method Overloading is where we use same method with different parameters.
+-  Same Name 
+- With same class 
+- Different Arguments 
+- Sequence of Arguments
+- Types of Arguments 
 ```java
 class Player {
     void attack() { 
@@ -71,8 +83,18 @@ class Player {
     }
 }
 ```
+![Figure2](Figures/Figure_2.jpg)
 ### Overriding
 Method Overriding is where we use same methods and parameters and the override the functions for that perticular class.
+- Same Name 
+- Diffrent Class
+- Same Arguments
+- Number of Arguments
+- Type of Argumetns
+- Sequence of Arguments
+- IS-A Relationship
+
+
 ```java
 class Character {
     void move() { 
@@ -266,15 +288,318 @@ String dayType = switch (dayOfWeek) {
 Class is a blueprint for the data which does not occupy any spaces in memory.
 Objects are the entities of class which are stored under class.
 
-## Principals of OOPs
-### Abstraction
-> Abstract methods have no body
+# Principals of OOPs
+## Abstraction
+> A method withoud no body and implimentation is Abstraction
  - A method must always be declared in an abstract class or we can say if class an abstract method it should declared abstract as well.
  - If a regular class extends an abstract class then the class must have to impliment all the abstract methods in abstract parent class or it has to be declared as abstrect.
  - Abstract class cannot be instancesiated, we can not create an object of abstraction class.
+ - Concrete Subclass - Class created using extending an abstract class and allows you to create objects
+ - Super keyword is used to call constructers, methods and variables (variables must not be private).
+ ```java
+abstract class NPC{
+    abstract void start();
+}
+class Player extends NPC{
+    void start(){
+        System.out.println("Started");
+    }
+}
+class Character extends NPC{
+    void start(){
+        System.out.println("Start's Car");
+    }
+    public static void main(String[] args) {
+        Character x=new Character();
+        Player y = new Player();
+        x.start(); 
+        y.start(); 
+    }
+}
+```
 ## Accesibity Table                             
 - Private 
 - Public 
 - Protected
 - Default
+
+## Polymorphism
+Polymorphism is like having different game characters (like enemies) perform the same action (like attacking) in their own unique way. In programming, this means different objects can respond to the same message or function call in a way that's specific to their type. It allows for flexibility and adaptability in code
+### Types of Polymorphism 
+#### Runtime Polymorphism
+#### Dynamic Polymorphism
+
+## Inheritance
+> Inheritance is inhariting the properties of parent class into child class
+- Inheritance in java is a mechinism in which one object aquires all the properties and behaviors of the parent object.
+- Inheritance represents the IS-A relationship which is known as parent child relationship.
+
+#### Advantanges of Inheritance 
+- Code reusebility 
+- It propose run time polymorphism by allowing mehthod overriding.
+#### Disadvanatges of Inheritance 
+- Using inhertance two class (Parent and child classes) gets tightly coupled.
+
+#### Important Points
+- Inheritance is achieved by `extend` keyword.
+- every class has a super or parent class that is object class (The object class doesn't have any parent class).
+
+## Types of Inheritance 
+- Single Inheritance
+```java
+class Character{
+
+}
+class Player extends Character{
+
+}
+```
+### Multilevel Inheritance
+```java
+class Pokemon {
+    String type;
+
+    public Pokemon(String type) {
+        this.type = type;
+    }
+}
+
+class Pikachu extends Pokemon {
+    public Pikachu() {
+        super("Electric"); 
+    }
+
+    void thunderbolt() {
+        System.out.println("Pikachu used Thunderbolt!");
+    }
+}
+
+class Raichu extends Pikachu {
+    void thunder() {
+        System.out.println("Raichu used Thunder!");
+    }
+}
+class MultilevelInheritance{
+    public static void main(String[] args) {
+        Raichu Kid = new Raichu();
+        Kid.thunderbolt();
+    }
+}
+```
+### Herarical Inheritance
+```java
+class Creature {
+    String habitat;
+
+    public Creature(String habitat) {
+        this.habitat = habitat;
+    }
+}
+
+class Dragon extends Creature {
+    public Dragon() {
+        super("Mountains"); 
+    }
+
+    void breatheFire() {
+        System.out.println("Dragon breathes fire!");
+    }
+}
+
+class Unicorn extends Creature {
+    public Unicorn() {
+        super("Forests"); 
+    }
+
+    void heal() {
+        System.out.println("Unicorn uses healing magic!");
+    }
+}
+class Hierarchical_Inheritance{
+    public static void main(String[] args) {
+        Unicorn N = new Unicorn();
+        N.heal();
+        Dragon X = new Dragon();
+        X.breatheFire();
+    }
+}
+```
+### Multiple Inheritance 
+```java
+interface Warrior {
+    void swingSword();
+    void blockAttack();
+}
+
+interface Mage {
+    void castSpell();
+    void meditate();
+}
+
+class HybridHero implements Warrior, Mage {
+    
+
+    @Override
+    public void swingSword() {
+        System.out.println("Hero swings their mighty sword!");
+    }
+
+    @Override
+    public void blockAttack() {
+        System.out.println("Hero skillfully blocks an incoming attack!");
+    }
+
+    @Override
+    public void castSpell() {
+        System.out.println("Hero unleashes a powerful spell!");
+    }
+
+    @Override
+    public void meditate() {
+        System.out.println("Hero focuses their mind, restoring mana.");
+    }
+}
+
+public class multipalinheri { 
+    public static  void main(String[] args) {
+        HybridHero Alone = new HybridHero();
+        Alone.castSpell();
+        Alone.swingSword();
+    }
+}
+```
+### Hybrid Inhertance
+```java
+class Human {
+    void fight() {
+        System.out.println("Engages in hand-to-hand combat!");
+    }
+}
+
+interface Robot {
+    void enhanceStrength();
+}
+
+class Cyborg extends Human implements Robot {
+    @Override
+    public void enhanceStrength() {
+        System.out.println("Strength enhanced by cybernetics!");
+    }
+}
+public class HybridInheritance {
+    public static void main(String[] args) {
+        Cyborg n = new Cyborg();
+        n.enhanceStrength();
+        n.fight();
+    }
+}
+```
+## Super Keyword
+Super keyword is a refrence variable it is used to reffer to imidiate parent class or current sub class. `super()`
+> Used where a subclass inherits properties and behaviors from its superclass
+### Use cases of Super 
+- Calling a Superclass constructor
+```java
+class Animal {
+    Animal() {
+        System.out.println("Animal is created");
+    }
+}
+
+class Dog extends Animal {
+    Dog() {
+        super(); // Call the parent class constructor
+        System.out.println("Dog is created");
+    }
+}
+```
+- Calling a supperclass method
+```java
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void eat() {
+        super.eat(); // Call the parent class method
+        System.out.println("Dog is eating");
+    }
+}
+- Acessing a superclass variable
+```java
+class Animal {
+    String color = "brown";
+}
+
+class Dog extends Animal {
+    String color = "black";
+
+    void printColor() {
+        System.out.println(color);   // Prints "black"
+        System.out.println(super.color); // Prints "brown"
+    }
+}
+```
+
+# Exception Handling 
+- If the superclass(parent) overrided meathod does not throws an exception, subclass overriding method can only throws the unchecked exceptions, Throwing checked exception will lead to compile time error.
+- If superclass overriden method does throws an exception, subclass overriding method can only throw same, subclass exception.
+- Throwing parent exception in exception hirrarchy will lead to compile time error. Also there is no issue if subclass overriden method is not throwing any exception.
+
+![ExceptionError](Figures/Figuere_3.jpg)
+
+- Invoking overridden method, we can call parent class method in overriding method using `super()` keyword.
+- If you don't want a method to be overwritten we declare it as a `final`.
+- (Method overriding versus method Hiding) When you define a static method with same signature as a static method in the base class it is known as method hiding.
+> Static method can not be overridden.
+- overriding and syncronized / strictfp method.
+
+## Compiletime Exception Error (Checked)
+### Types of Checked Exception
+1. IOException
+- FileNotFoundException
+- EOFException
+2. SQLException
+3. ClassNotFoundException
+4. IntruptedException
+## Runtime Exception Error (Unchecked)
+### Types of Unchecked Exception
+1. NullPointerException
+2. ArrayIndexOutOfBondsException
+3. ArithmaticException
+4. IllegalArgumentException
+5. NumberFoormatException
+6. ClassCastException
+## Errors
+1. OutOfMemoryError
+2. StackOverFlowError
+3. VirtualMachineError
+
+### Finally
+- `Finally` keyword is used to run iportant code regardless of the exceptions.
+- Used to put important code such as cleanup codes and closer codes which are needed anyway regardless of any try-catch results.
+
+# Array
+Array is a collection of items with same data type, it's a continues type of data structure.
+To initilize an array we use `ArrayName[]` syntax.
+## Advantages of an Array
+- We can access any element randomly by using indexs provided by array.
+- We can access using synatx : s`System.out.println("Your inventory: " + Arrays.toString(letters));`
+- Array can be used to store other data structures like trees, linkedlist, heap, stack, queues.
+## Disadvantages
+- Fixed Size, we need to mention the size of an array.
+- When array is created, size can not be changed.
+- Memory wastage, there is alot of chances of memory wastage. ie: Suppose we created an array of length 100 but only 10 elemets are insterted then 90 blockes are empety thus memory wastage.
+- Strongly type, Array stores any similar data type thus strongly type.
+- int a[5]; a[0] = 7;....a[4] = 8;`
+
+# Lambda Expression 
+- To enable functional programming in java
+- To make code more readible, maintainable and consize code.
+- Zar file size reduction.
+-  Elimnation of shadow variable.
+### Functional Interface
+Interfaces which containes only one abstract method.
 

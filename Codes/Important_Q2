@@ -1,0 +1,11 @@
+// Can we overload java main method ?
+class Important_Q2{
+    public static void main(String[]args){
+        System.out.println("main");
+        main(5);
+    }
+    public static void main(int a){
+        System.out.println("The main");
+    }
+}
+// Yes, we can make any number of main method using method overloding, cause JVM always calls main method which recives string args;
