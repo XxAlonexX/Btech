@@ -4,7 +4,7 @@ A comprehensive collection of AI algorithms implemented in Python.
 
 ## Directory Structure
 ```
-Codes/
+01_Module/
 ├── search/
 │   ├── graph_search.py    # DFS, BFS, Iterative Deepening, Bidirectional Search
 │   ├── informed_search.py # A*, Greedy Best-First Search
@@ -19,7 +19,7 @@ Codes/
 ## Algorithms and Libraries Used
 
 ### Search Algorithms (`search/`)
-- [graph_search.py](search/graph_search.py)
+- [graph_search.py](./search/graph_search.py)
   - Libraries: `collections` (deque, defaultdict)
   - Algorithms: 
     - Depth-First Search (DFS)
@@ -27,20 +27,20 @@ Codes/
     - Iterative Deepening Search
     - Bidirectional Search
 
-- [informed_search.py](search/informed_search.py)
+- [informed_search.py](./search/informed_search.py)
   - Libraries: `heapq`, `math`
   - Algorithms: 
     - A* Search
     - Greedy Best-First Search
   - Heuristics: Manhattan Distance, Euclidean Distance
 
-- [local_search.py](search/local_search.py)
+- [local_search.py](./search/local_search.py)
   - Libraries: `random`, `math`
   - Algorithms:
     - Hill Climbing
     - Simulated Annealing
 
-- [csp.py](search/csp.py)
+- [csp.py](./search/csp.py)
   - Pure Python implementation
   - Algorithms:
     - Backtracking Search
@@ -48,7 +48,7 @@ Codes/
     - Map Coloring Example
 
 ### Game Theory (`games/`)
-- [minimax.py](games/minimax.py)
+- [minimax.py](./games/minimax.py)
   - Pure Python implementation
   - Algorithms:
     - Minimax Algorithm
@@ -56,7 +56,7 @@ Codes/
     - Best Move Selection
 
 ### Intelligent Agents (`agents/`)
-- [agent.py](agents/agent.py)
+- [agent.py](./agents/agent.py)
   - Pure Python implementation
   - Agent Types:
     - Reflex Agent
@@ -71,9 +71,10 @@ All implementations use Python's standard library only:
 - math
 - random
 
+No external dependencies are required.
 
 ## Usage Examples
-> Simple use of algorithms:
+
 ### Using Graph Search Algorithms
 ```python
 from search.graph_search import Graph

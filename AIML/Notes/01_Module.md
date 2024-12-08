@@ -5,6 +5,9 @@ AI enables machines to mimic human problem-solving and reasoning abilities by us
     - **Search-Based**: Explore paths in a state-space (e.g., BFS, DFS).
     - **Optimization-Based**: Focus on finding the optimal solution under given constraints.
     - **Knowledge-Based**: Use rules and logical reasoning to infer solutions.
+
+________________________________________________________________________
+
 ## Intelligent Agents
 An intelligent agent is a computational entity that perceives its environment, decides on actions, and performs tasks to achieve goals.
 #### **Types of Intelligent Agents**:
@@ -34,6 +37,9 @@ rules = {"enemy seen": "attack", "low health": "retreat"}
 agent = ReflexAgent(rules)
 print(agent.decide("enemy seen"))  # Output: attack
 ```
+
+________________________________________________________________________
+
 ## Different Approaches of AI
 #### 1. **Simple Explanation**:
 AI can be implemented using three main approaches:
@@ -54,6 +60,9 @@ AI can be implemented using three main approaches:
 #### 4. **How to Build Your Own**:
 - **Symbolic AI**: Write logic and rules using programming.
 - **Sub-Symbolic AI**: Train models using machine learning libraries (e.g., TensorFlow).
+
+________________________________________________________________________
+
 ## Searching Techniques
 Searching involves exploring possible solutions systematically to solve problems.
 ### Uniformed Search
@@ -176,6 +185,9 @@ print("A* Search Path:", path)
 ## Uninformed Search vs Informed Search
 
 ![Diffrence-Between-Informed&Uninformed](Diffrence-Between-Informed&Uninformed.png)
+
+________________________________________________________________________
+
 ### Local Search Algorithms
 #### Hill Climbing 
 Moves toward the highest-valued neighbour until no improvement is possible.
@@ -223,6 +235,7 @@ print("Simulated Annealing Result:", result)
 
 
 ![Key Diagram](Diffrence-Between-Hill-&-Simulated.png)
+
 #### Libraries
 `SciPy` for optimisation problems:
 
@@ -233,6 +246,9 @@ result = minimize_scalar(lambda x: -x**2, bounds=(-10, 10), method='bounded')
 print("SciPy Optimization Result:", result.x)
 ```
 `Pyomo` & `OR-Tools` for larger optimisation problems. 
+
+________________________________________________________________________
+
 ## Adversarial Search
 Adversarial Search is used in decision-making scenarios where multiple agents (players) with opposing goals interact, such as in games. The goal is to optimize one's outcome while considering the actions of opponents.
 ### **Simple Explanation**
@@ -293,6 +309,9 @@ def alpha_beta(state, depth, alpha, beta, is_maximizing):
                 break
         return min_eval
 ```
+
+________________________________________________________________________
+
 ### Constrained Satisfaction Problem
 A `CSP` is a type of problem where you need to find a solution to a set of variables that must satisfy certain constraints. The objective is to assign values to variables in such a way that all constraints are met.
 - **Variables**: Entities that need to be assigned values.

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e7b3b1b4725aef62",
+        "id": "6cc67e7ae13dc61c",
         "type": "tabs",
         "children": [
           {
-            "id": "3e5f24a1ff0c905d",
+            "id": "aebc8032aef25b57",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AIML/Codes/README.md",
+                "file": "AIML/Notes/02_Module.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "02_Module"
             }
           }
         ]
@@ -162,21 +162,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3e5f24a1ff0c905d",
+  "active": "aebc8032aef25b57",
   "lastOpenFiles": [
+    "AIML/Codes/01_Module/README.md",
+    "AIML/Codes/02_Module/PCA.py",
+    "AIML/Codes/01_Module/PCA.py",
+    "AIML/Notes/02_Module.md",
+    "AIML/Codes/02_Module",
+    "AIML/Codes/01_Module/search/local_search.py",
+    "AIML/Codes/01_Module/search/informed_search.py",
+    "AIML/Codes/01_Module/search/graph_search.py",
+    "AIML/Codes/01_Module/search/csp.py",
+    "AIML/Codes/01_Module/search",
+    "AIML/Codes/01_Module/games/minimax.py",
+    "AIML/Codes/01_Module/games",
     "AIML/Notes/01_Module.md",
-    "AIML/Codes/agents/agent.py",
-    "AIML/Codes/agents",
-    "AIML/Codes/games/minimax.py",
-    "AIML/Codes/games",
-    "AIML/Codes/search/local_search.py",
-    "AIML/Codes/search/informed_search.py",
-    "AIML/Codes/search/graph_search.py",
-    "AIML/Codes/search/csp.py",
-    "AIML/Codes/search",
-    "AIML/Codes/ai_algorithms/README.md",
     "AIML/Codes/README.md",
-    "AIML/Codes/ai_algorithms/search/local_search.py",
+    "AIML/Codes/ai_algorithms/README.md",
     "ai_algorithms/README.md",
     "README.md",
     "Java-Workshop/Notes/D1 Notes.md",
