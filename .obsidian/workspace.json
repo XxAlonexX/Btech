@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fd2a651601c666ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AIML/Notes/01_Module.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_Module"
-            }
-          },
-          {
             "id": "3e5f24a1ff0c905d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
+                "file": "AIML/Codes/README.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "README"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -180,6 +165,19 @@
   "active": "3e5f24a1ff0c905d",
   "lastOpenFiles": [
     "AIML/Notes/01_Module.md",
+    "AIML/Codes/agents/agent.py",
+    "AIML/Codes/agents",
+    "AIML/Codes/games/minimax.py",
+    "AIML/Codes/games",
+    "AIML/Codes/search/local_search.py",
+    "AIML/Codes/search/informed_search.py",
+    "AIML/Codes/search/graph_search.py",
+    "AIML/Codes/search/csp.py",
+    "AIML/Codes/search",
+    "AIML/Codes/ai_algorithms/README.md",
+    "AIML/Codes/README.md",
+    "AIML/Codes/ai_algorithms/search/local_search.py",
+    "ai_algorithms/README.md",
     "README.md",
     "Java-Workshop/Notes/D1 Notes.md",
     "AIML/Figures/Diffrence-Between-Hill-&-Simulated.png",
@@ -187,18 +185,8 @@
     "AIML/Figures/Diffrence-Between-Informed&Uninformed.png",
     "AIML/Figures.md",
     "AIML/Figures/Screenshot From 2024-12-08 15-00-17.png",
-    "AIML/Notes",
-    "AIML/Figures",
-    "AIML",
     "Java-Workshop/Figures/Figure_2.jpg",
     "Java-Workshop/Figures/Figure_1.jpg",
-    "Java-Workshop/Figures/Figuere_3.jpg",
-    "Java-Workshop",
-    "Java-Workshop/Codes/Warriorr.java",
-    "Codes/Warrior.java",
-    "Codes/ClassCode.java",
-    "Notes/ClassCode.java",
-    "Java-Workshop/Codes/ExceptionHaandling.java",
-    "Java-Workshop/Codes/exceptionError.java"
+    "Java-Workshop/Figures/Figuere_3.jpg"
   ]
 }
