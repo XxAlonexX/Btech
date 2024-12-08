@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Module.md",
+                "file": "AIML/Notes/03_Module.md",
                 "mode": "preview",
                 "source": false
               },
@@ -177,8 +177,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a04d1cc6c1bfc16d",
+  "active": "8ca1a6c8e5bd99b6",
   "lastOpenFiles": [
+    "Pasted image 20241208182322.png",
+    "AIML/Notes/03_Module.md",
     "AIML/Codes/03_Module/README.md",
     "AIML/Codes/03_Module/decision_tree.py",
     "AIML/Codes/03_Module/logistic_regression.py",
@@ -188,14 +190,12 @@
     "AIML/Figures/KNN.png",
     "AIML/Figures/Diffrence-between-CART-ID3-C4.5.png",
     "AIML/Figures/Gini_Index.png",
-    "Pasted image 20241208182322.png",
     "AIML/Figures/CART.png",
     "AIML/Figures/Gain-Ratio-Formula.png",
     "AIML/Figures/ID3.png",
     "AIML/Figures/Regularised_Linear_Regression.png",
     "AIML/Figures/Confusion-Matrix.png",
     "AIML/Notes/02_Module.md",
-    "03_Module.md",
     "AIML/Codes/01_Module/README.md",
     "AIML/Codes/02_Module/PCA.py",
     "AIML/Codes/01_Module/PCA.py",
