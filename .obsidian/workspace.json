@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "02_Module"
             }
+          },
+          {
+            "id": "a04d1cc6c1bfc16d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03_Module.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03_Module"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,12 +177,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aebc8032aef25b57",
+  "active": "a04d1cc6c1bfc16d",
   "lastOpenFiles": [
+    "AIML/Figures/SVM.png",
+    "AIML/Figures/KNN.png",
+    "AIML/Figures/Diffrence-between-CART-ID3-C4.5.png",
+    "AIML/Figures/Gini_Index.png",
+    "Pasted image 20241208182322.png",
+    "AIML/Figures/CART.png",
+    "AIML/Figures/Gain-Ratio-Formula.png",
+    "AIML/Figures/ID3.png",
+    "AIML/Figures/Regularised_Linear_Regression.png",
+    "AIML/Figures/Confusion-Matrix.png",
+    "AIML/Figures/L1vsL2.png",
+    "AIML/Notes/02_Module.md",
+    "03_Module.md",
     "AIML/Codes/01_Module/README.md",
     "AIML/Codes/02_Module/PCA.py",
     "AIML/Codes/01_Module/PCA.py",
-    "AIML/Notes/02_Module.md",
     "AIML/Codes/02_Module",
     "AIML/Codes/01_Module/search/local_search.py",
     "AIML/Codes/01_Module/search/informed_search.py",
@@ -182,13 +209,6 @@
     "ai_algorithms/README.md",
     "README.md",
     "Java-Workshop/Notes/D1 Notes.md",
-    "AIML/Figures/Diffrence-Between-Hill-&-Simulated.png",
-    "AIML/Figures/Screenshot From 2024-12-08 15-49-12.png",
-    "AIML/Figures/Diffrence-Between-Informed&Uninformed.png",
-    "AIML/Figures.md",
-    "AIML/Figures/Screenshot From 2024-12-08 15-00-17.png",
-    "Java-Workshop/Figures/Figure_2.jpg",
-    "Java-Workshop/Figures/Figure_1.jpg",
-    "Java-Workshop/Figures/Figuere_3.jpg"
+    "AIML/Figures.md"
   ]
 }
