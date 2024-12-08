@@ -13,26 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java-Workshop/Notes/D1 Notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "D1 Notes"
-            }
-          },
-          {
-            "id": "2292c832735386be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "AIML/Notes/01_Module.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "01_Module"
+            }
+          },
+          {
+            "id": "3e5f24a1ff0c905d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README.md"
             }
           }
         ],
@@ -177,13 +177,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2292c832735386be",
+  "active": "3e5f24a1ff0c905d",
   "lastOpenFiles": [
+    "AIML/Notes/01_Module.md",
+    "README.md.md",
+    "Java-Workshop/Notes/D1 Notes.md",
     "AIML/Figures/Diffrence-Between-Hill-&-Simulated.png",
     "AIML/Figures/Screenshot From 2024-12-08 15-49-12.png",
     "AIML/Figures/Diffrence-Between-Informed&Uninformed.png",
-    "Java-Workshop/Notes/D1 Notes.md",
-    "AIML/Notes/01_Module.md",
     "AIML/Figures.md",
     "AIML/Figures/Screenshot From 2024-12-08 15-00-17.png",
     "AIML/Notes",
