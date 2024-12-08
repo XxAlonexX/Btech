@@ -1,4 +1,4 @@
-A# Introduction to AI and Problem Solving Methods
+# Introduction to AI and Problem Solving Methods
 AI enables machines to mimic human problem-solving and reasoning abilities by using logical algorithms and computational intelligence.
 - **State-Space Representation**: Represent each possible situation as a "state" and transitions as actions.
 - **Problem-Solving Approaches**:
