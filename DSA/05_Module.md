@@ -158,7 +158,7 @@ int main() {
 ![Unit5](Unit5.3.jpeg)
 ![Unit5](Unit5.4.jpeg)
 ![Unit5](Unit5.5.jpeg)
-![Unit5](Unit5.6.jpeg)
-![Unit5](Unit5.7.jpeg)
-![Unit5](Unit5.8.jpeg)
+
+
+
 
