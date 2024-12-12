@@ -8,11 +8,17 @@ Analyzing an algorithm determines its efficiency regarding time (execution durat
 ## Complexity of Algorithms
 1. **Time Complexity:** How the running time of an algorithm increases with input size.
 2. **Space Complexity:** Amount of memory required.
+
+---
+
 ## Amortized Analysis
 Amortized analysis calculates the average time per operation over a sequence of operations, even if some operations are expensive. Example: Dynamic array resizing.
 ## Growth of Functions
 Describes how a function's value increases with input size. Common growth functions:
 O(1),O(log n)etc.
+
+---
+
 ## Methods of Solving Recurrences
 ##  Substitution 
 The **substitution method** is a technique used to solve recurrence relations by guessing the solution and proving it correct using **mathematical induction**. It's particularly useful when solving recurrence relations in algorithms, such as analyzing recursive programs.
@@ -113,6 +119,7 @@ int main() {
 
 ```
 
+---
 ## Performance Measurements
 Metrics to evaluate algorithms, including execution time and memory consumption.
 ## Time and Space Complexity of an Algorithm
@@ -125,6 +132,9 @@ Used to describe complexity:
 ![Notes](Notes.jpeg)
 - **Theta (Θ):** Tight bound.
 - **Omega (Ω):** Lower bound.
+
+---
+
 ## Abstract Data Types (ADT)
 An ADT specifies the behavior of data structures without implementation details. Example: Stack, Queue, List.
 # Fundamentals of Data Structures
