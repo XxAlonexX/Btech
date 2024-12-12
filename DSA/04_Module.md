@@ -65,7 +65,8 @@ int main() {
 - **Prefix:** Operators precede operands (e.g., `+ a b`).
 - **Postfix:** Operators follow operands (e.g., `a b +`).
 
-
+![Postfix](Postfix.jpeg)
+![Infix](Infix.jpeg)
 ## Recursion
 Recursion is a programming technique where a function calls itself directly or indirectly.
 ### Principles of Recursion
