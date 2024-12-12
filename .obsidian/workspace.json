@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/03_Module.md",
+                "file": "DSA/05_Module.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_Module"
+              "title": "05_Module"
             }
           }
         ]
@@ -164,25 +164,25 @@
   },
   "active": "ba4aeb444b070c5b",
   "lastOpenFiles": [
-    "DSA/Images/ListvsLinkedlist.png",
-    "DSA/Images/Comparison.png",
+    "DSA/Images/Unit5.1.jpeg",
+    "DSA/Images/Unit5.2.jpeg",
+    "DSA/Images/Unit5.3.jpeg",
+    "DSA/Images/Unit5.4.jpeg",
+    "DSA/Images/Unit5.5.jpeg",
+    "DSA/Images/Unit5.6.jpeg",
+    "DSA/Images/Unit5.7.jpeg",
+    "DSA/Images/Unit5.8.jpeg",
+    "DSA/Images/Quick.webp",
+    "DSA/Images/mergesort.webp",
+    "DSA/Images/Convex-Hull.webp",
+    "DSA/04_Module.md",
+    "DSA/03_Module.md",
     "DSA/02_Module.md",
     "Linear.md",
-    "DSA/Images/Chaining.png",
-    "DSA/Images/Linear.png",
-    "DSA/Images/Quadratic.jpeg",
-    "DSA/Images/Hashing.png",
-    "DSA/Images/Hashing1.jpeg",
-    "DSA/Images/Hashing2.jpeg",
-    "DSA/Images/Hashing3.jpeg",
-    "DSA/Images/Index-Formula.png",
     "DSA/01_Module.md",
-    "DSA/03_Module.md",
-    "DSA/Images/Notes.jpeg",
     "DSA/Images",
     "Untitled.md",
     "DSA/05_Module.md",
-    "DSA/04_Module.md",
     "AIML/Notes/01_Module.md",
     "DSA",
     "AIML/Notes/04_Module.md",
