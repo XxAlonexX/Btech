@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e5d387d8fbe0ad5f",
+        "id": "1c4feb0271730d9b",
         "type": "tabs",
         "children": [
           {
-            "id": "0da5d3acb4e448a7",
+            "id": "ba4aeb444b070c5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AIML/Notes/01_Module.md",
-                "mode": "preview",
+                "file": "DSA/01_Module.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -162,12 +162,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0da5d3acb4e448a7",
+  "active": "ba4aeb444b070c5b",
   "lastOpenFiles": [
+    "DSA/Images/Notes.jpeg",
+    "DSA/Images/Masters-Theoram.png",
+    "DSA/Images",
+    "Untitled.md",
+    "DSA/01_Module.md",
+    "DSA/05_Module.md",
+    "DSA/04_Module.md",
+    "DSA/03_Module.md",
+    "DSA/02_Module.md",
+    "AIML/Notes/01_Module.md",
+    "DSA",
+    "AIML/Notes/04_Module.md",
     "AIML/Notes/03_Module.md",
     "AIML/Notes/02_Module.md",
-    "AIML/Notes/01_Module.md",
-    "AIML/Notes/04_Module.md",
     "AIML/Codes/05_Module/README.md",
     "AIML/Notes/05_Module.md",
     "AIML/Codes/05_Module/ensemble.py",
@@ -184,14 +194,11 @@
     "AIML/Codes/04_Module/dbscan.py",
     "AIML/Codes/04_Module/hierarchical.py",
     "AIML/Codes/04_Module/kmedians.py",
-    "AIML/Codes/04_Module/kmodes.py",
-    "AIML/Codes/04_Module/kmeans.py",
     "AIML/Figures/K-Means.png",
     "Pasted image 20241208182322.png",
     "AIML/Codes/03_Module/README.md",
     "AIML/Figures/SVM.png",
     "AIML/Figures/KNN.png",
-    "AIML/Figures/Diffrence-between-CART-ID3-C4.5.png",
     "AIML/Codes/01_Module/README.md",
     "AIML/Codes/README.md",
     "AIML/Codes/ai_algorithms/README.md",
