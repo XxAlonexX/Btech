@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/04_Module.md",
+                "file": "DSA/01_Module.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04_Module"
+              "title": "01_Module"
             }
           }
         ]
@@ -164,6 +164,7 @@
   },
   "active": "ba4aeb444b070c5b",
   "lastOpenFiles": [
+    "DSA/04_Module.md",
     "DSA/Codes/queue_operations.cpp",
     "DSA/Codes/tower_of_hanoi.cpp",
     "DSA/Codes/recursion_examples.cpp",
@@ -174,7 +175,6 @@
     "DSA/Images/LinkedQueue.png",
     "DSA/Images/Queue.png",
     "DSA/05_Module.md",
-    "DSA/04_Module.md",
     "DSA/Images/LinkedListStack.png.png",
     "DSA/Images/Stack2.png",
     "DSA/Images/stack.png",
@@ -184,7 +184,6 @@
     "DSA/Codes/merge_sort.cpp",
     "DSA/Codes/quick_sort.cpp",
     "DSA/Codes/polynomial_representation.cpp",
-    "DSA/Codes/linked_lists.cpp",
     "DSA/Images/Unit5.1.jpeg",
     "DSA/Images/Unit5.2.jpeg",
     "DSA/Images/Unit5.3.jpeg",
