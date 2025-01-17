@@ -126,7 +126,7 @@ The external level defines how users interact with the database. It defines **us
 
 ---
 # DBMS Components
-![DBMS](DBMS.png)
+![DBMS](./Figures/DBMS.png)
 #### 1. Database Engine
 The **database engine** is the core part that handles data storage, manipulation, and retrieval. It’s responsible for **querying, transactions**, and ensuring **data consistency**.
 #### 2. Database Schema
