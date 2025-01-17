@@ -7,7 +7,7 @@ A stack is a linear data structure that follows the Last-In-First-Out (LIFO) pri
 - An array is used to store the elements.
 - A `top` variable keeps track of the index of the top element.
  
-![Stack](Stack.png)
+![Stack](./Images/Stack.png)
 
 ```cpp
 #include <iostream>
@@ -53,7 +53,7 @@ int main() {
 **LinkedList**:
 - Each node in the linked list represents an element.
 - The `top` pointer points to the topmost node.
-![LinkedlistStack](Stack2.png)
+![LinkedlistStack](./Images/Stack2.png)
 
 ## Application of Stack
 - **Function Calls:** Keeps track of function calls and return addresses.
@@ -65,8 +65,8 @@ int main() {
 - **Prefix:** Operators precede operands (e.g., `+ a b`).
 - **Postfix:** Operators follow operands (e.g., `a b +`).
 
-![Postfix](Postfix.jpeg)
-![Infix](Infix.jpeg)
+![Postfix](./Images/Postfix.jpeg)
+![Infix](./Images/Infix.jpeg)
 ## Recursion
 Recursion is a programming technique where a function calls itself directly or indirectly.
 ### Principles of Recursion
@@ -123,9 +123,9 @@ int main() {
 ## Tower of Hanoi
 - **Recursive:** Break down the problem into smaller subproblems.
 - **Iterative:** Use a stack to simulate the recursive calls.
-![Unit5](Unit5.6.jpeg)
-![Unit5](Unit5.7.jpeg)
-![Unit5](Unit5.8.jpeg)
+![Unit5](./Images/Unit5.6.jpeg)
+![Unit5](./Images/Unit5.7.jpeg)
+![Unit5](./Images/Unit5.8.jpeg)
 ### Trade-offs between iteration and recurssion
 - **Readability:** Recursion can often be more intuitive, but iteration can be more straightforward.
 - **Efficiency:** Recursive functions can have overhead due to function calls, while iterative solutions can be more efficient.
@@ -146,7 +146,7 @@ A queue is a linear data structure that follows the First-In-First-Out (FIFO) pr
 **Array Implementation**
 - Use an array to store the elements.
 - Two pointers, `front` and `rear`, keep track of the front and rear of the queue.
-![Queue](Queue.png)
+![Queue](./Images/Queue.png)
 
 ```cpp
 #include <iostream>
@@ -180,7 +180,7 @@ int main() {
 
 - Use a linked list to store the elements.
 - The `front` and `rear` pointers point to the front and rear nodes of the queue.
-![LinkedQueue](LinkedQueue.png)
+![LinkedQueue](./Images/LinkedQueue.png)
 ## Operations in Queues
 1. **Enqueue:** Adds an element to the rear of the queue.
 3. **Dequeue:** Removes and returns the element from the front of the queue. 3. **IsFull:** Checks if the queue is full.  

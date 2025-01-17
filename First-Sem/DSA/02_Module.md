@@ -47,7 +47,7 @@ int main() {
 #### 3D Array
 `Address(i,j,k)=Base Address+[((i⋅Y⋅Z)+(j⋅Z)+k)]⋅Size of Element`
 #### n-D Array 
-![Formula](Index-Formula.png)
+![Formula](./Images/Index-Formula.png)
 
 ---
 
@@ -114,13 +114,13 @@ int main() {
 
 ```
 
-![Hashing](Hashing1.jpeg)
+![Hashing](./Images/Hashing1.jpeg)
 ## The Symbol Table
-![Hashing Symbol Table](Hashing2.jpeg)
+![Hashing Symbol Table](./Images/Hashing2.jpeg)
 ## Hashing Functions
 - Division Method: h(k)=kmodm
 - Multiplication Method: h(k)=⌊m(kAmod1)⌋
-![Hashing Functions](Hashing3.jpeg)
+![Hashing Functions](./Images/Hashing3.jpeg)
 
 ---
 
@@ -135,23 +135,23 @@ In open addressing, all elements are stored within the hash table itself. When a
 - If the next slot is occupied, move to the next one.
 - Continue until an empty slot is found.
 
-![Linear](Linear.png)
+![Linear](./Images/Linear.png)
 2.  **Quadratic Probing:**
 - Start at the collision index.
 - Probe the next slot using a quadratic function (e.g., `i^2`).
 - Continue until an empty slot is found.
 - **Chaining:** Use linked lists at each hash index.
 
-![Quadratic](Quadratic.jpeg)
+![Quadratic](./Images/Quadratic.jpeg)
 3.  **Double Hashing:**
 
 - Use a second hash function to calculate the step size.
 - Probe the next slot using the step size.
 - Continue until an empty slot is found.
-![Hashing](Hashing.png)
+![Hashing](./Images/Hashing.png)
 ### Chaining 
 In chaining, each hash table index stores a linked list of elements that hash to that index. When a collision occurs, the new element is simply added to the end of the linked list at that index.
-![Chaining](Chaining.png)
+![Chaining](./Images/Chaining.png)
 ## Hashing for Direct Files
 Used to store records in direct access files for constant-time lookups.
 

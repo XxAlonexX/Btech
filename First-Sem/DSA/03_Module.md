@@ -1,6 +1,6 @@
 # Comparison of Array (Linked List)
 
-![Comparison](Comparison.png)
+![Comparison](./Images/Comparison.png)
 
 # List and Linked List
 - **List:**  
@@ -8,7 +8,7 @@
 - **Linked List:**  
     A dynamic data structure where elements (nodes) are linked using pointers.
     
-![ListvsLinkedlist](ListvsLinkedlist.png)
+![ListvsLinkedlist](./Images/ListvsLinkedlist.png)
 
 # Types of Linked List
 

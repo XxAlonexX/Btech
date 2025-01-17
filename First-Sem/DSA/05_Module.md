@@ -23,7 +23,7 @@ Quick Sort is a **divide-and-conquer** algorithm that partitions the array aroun
 - **Best/Average Case:** O(n log⁡ n).
 - **Worst Case:** O(n^2).
 
-![Quick](Quick.webp)
+![Quick](./Images/Quick.webp)
 
 ```cpp
 #include <iostream>
@@ -69,7 +69,7 @@ Merge Sort is another **divide-and-conquer** sorting algorithm:
 **Time Complexity:** 
 **Best/Average/Worst Case:** O(n log⁡ n)
 
-![Mergesort](Mergesort.webp)
+![Mergesort](./Images/Mergesort.webp)
 
 ```cpp
 #include <iostream>
@@ -114,7 +114,7 @@ The **Convex Hull** of a set of points is the smallest convex polygon that enclo
 **Time Complexity:**
 - **Best Case:** O(n log⁡ n)
 
-![Convex-Hull](Convex-Hull.webp)
+![Convex-Hull](./Images/Convex-Hull.webp)
 
 ```cpp
 #include <iostream>
@@ -153,11 +153,11 @@ int main() {
 ```
 # Greedy Methods 
 **Greedy algorithms** build solutions step-by-step by choosing the most optimal option at each stage without considering the global solution.
-![Unit5](Unit5.1.jpeg)
-![Unit5](Unit5.2.jpeg)
-![Unit5](Unit5.3.jpeg)
-![Unit5](Unit5.4.jpeg)
-![Unit5](Unit5.5.jpeg)
+![Unit5](./Images/Unit5.1.jpeg)
+![Unit5](./Images/Unit5.2.jpeg)
+![Unit5](./Images/Unit5.3.jpeg)
+![Unit5](./Images/Unit5.4.jpeg)
+![Unit5](./Images/Unit5.5.jpeg)
 
 
 

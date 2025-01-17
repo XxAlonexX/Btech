@@ -10,7 +10,7 @@ java Test.java
 java Test
 RuntimeException : NoSuchMethodError.main
 ```
-![Figure1](Figure_1.jpg)
+![Figure1](../Figures/Figure_1.jpg)
 
 2. We can declare `'String[]'`  in any acceptable form.
 - `main(String []args)`
@@ -83,7 +83,7 @@ class Player {
     }
 }
 ```
-![Figure2](Figure_2.jpg)
+![Figure2](../Figures/Figure_2.jpg)
 ### Overriding
 Method Overriding is where we use same methods and parameters and the override the functions for that perticular class.
 - Same Name 
@@ -548,7 +548,7 @@ class Dog extends Animal {
 - If superclass overriden method does throws an exception, subclass overriding method can only throw same, subclass exception.
 - Throwing parent exception in exception hirrarchy will lead to compile time error. Also there is no issue if subclass overriden method is not throwing any exception.
 
-![ExceptionError](Figuere_3.jpg)
+![ExceptionError](../Figures/Figuere_3.jpg)
 
 - Invoking overridden method, we can call parent class method in overriding method using `super()` keyword.
 - If you don't want a method to be overwritten we declare it as a `final`.

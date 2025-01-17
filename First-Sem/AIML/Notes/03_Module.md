@@ -27,7 +27,7 @@ print(model.predict([[5]]))  # Output: 10
 
 ## Mean Square Error
 Measures the average squared difference between predicted and actual values.
-![Mean_Square_Error](Mean_Square_Error.png)
+![Mean_Square_Error](../Figures/Mean_Square_Error.png)
 
 ```python
 from sklearn.metrics import mean_squared_error
@@ -37,7 +37,7 @@ mse = mean_squared_error(y_true, y_pred)
 
 ## R Square Error
 Measures how well the model explains the variance in the target variable. Higher values are better.
-![R_Square_Error](R_Square_Error.png)
+![R_Square_Error](../Figures/R_Square_Error.png)
 
 ```python
 from sklearn.metrics import r2_score
@@ -47,7 +47,7 @@ r2 = r2_score(y_true, y_pred)
 ## Logistic Regression
 Used for binary classification. It predicts probabilities and assigns classes based on a threshold (e.g., 0.5).
 
-![Logistic_Regression](Logistic_Regression.png)
+![Logistic_Regression](../Figures/Logistic_Regression.png)
 
 ```python
 from sklearn.linear_model import LogisticRegression
@@ -139,7 +139,7 @@ Variance measures the error due to sensitivity to small fluctuations in the trai
 - **High Variance**: Complex models that overfit to training data, capturing noise (overfitting).
 - **Goal**: Find a balance where the model generalizes well to unseen data.
 
-![Bias-vs-Variance](Bias-vs-Variance.png)
+![Bias-vs-Variance](../Figures/Bias-vs-Variance.png)
 
 ## Overfitting & Underfitting
 
@@ -153,7 +153,7 @@ Variance measures the error due to sensitivity to small fluctuations in the trai
 L1 regularization adds the absolute value of the coefficients as a penalty term to the cost function. This is known as **Lasso (Least Absolute Shrinkage and Selection Operator)**.
 ##### **Mathematical Formula**:
 
-![L1](L1.png)
+![L1](../Figures/L1.png)
 Where:
 - λ\lambdaλ is the regularization parameter (controls the strength of the penalty).
 - wiw_iwi​ are the model coefficients.
@@ -180,7 +180,7 @@ L2 regularization adds the square of the coefficients as a penalty term to the c
 
 ##### **Mathematical Formula**:
 
-![L2](L2.png)
+![L2](../Figures/L2.png)
 Where:
 
 - λ\lambdaλ is the regularization parameter (controls the strength of the penalty).
@@ -201,7 +201,7 @@ print("Ridge Coefficients:", model.coef_)
 ```
 ## Difference Between L1 and L2 Regularization
 
-![L1vsL2](L1vsL2.png)
+![L1vsL2](../Figures/L1vsL2.png)
 - **L1 Regularization (Lasso)**: Encourages sparsity by setting coefficients to zero, useful for feature selection.
 - **L2 Regularization (Ridge)**: Shrinks coefficients without making them zero, useful when all features are believed to be important but need regularization.
 ## Regularised Linear Regression
@@ -212,7 +212,7 @@ Combines linear regression with regularization (L1 or L2) to prevent overfitting
 - **Multicollinearity**: When features are highly correlated.
 - **Overfitting**: To prevent overfitting on complex data.
 
-![Regularised_Linear_Regression](Regularised_Linear_Regression.png)
+![Regularised_Linear_Regression](../Figures/Regularised_Linear_Regression.png)
 ## Decision Trees (ID3, C4.5, CART)
 Decision trees are a type of supervised learning algorithm used for both classification and regression tasks. The goal is to model decisions and their possible consequences, making them intuitive and easy to understand.
 
@@ -220,25 +220,25 @@ In decision trees, data is split at each node based on the feature that gives th
 ### **ID3**
 an algorithm used to generate decision trees, introduced by Ross Quinlan in 1986. It builds a tree by choosing the best feature to split on at each step using the **information gain** criterion.
 
-![ID3](ID3.png)
+![ID3](../Figures/ID3.png)
 
 ### C4.5
 **C4.5** is an extension of the ID3 algorithm, developed by Ross Quinlan in 1993. It also builds decision trees, but it improves upon ID3 by addressing some limitations.
 #### Gain Ratio Formula
 
-![Gain-Ratio-Formula](Gain-Ratio-Formula.png)
+![Gain-Ratio-Formula](../Figures/Gain-Ratio-Formula.png)
 ### CART
 Classification and Regression Trees is another decision tree algorithm that can be used for both classification (CART classification) and regression (CART regression). It was introduced by Breiman et al. in 1986.
 
-![Gini_Index](Gini_Index.png)
+![Gini_Index](../Figures/Gini_Index.png)
 ### Differences Between ID3, C4.5, and CART
 
-![Diffrences](Diffrence-between-CART-ID3-C4.5.png)
+![Diffrences](../Figures/Diffrence-between-CART-ID3-C4.5.png)
 
 ## Confusion Matrix
 Summarizes classification performance.
 
-![Confusion-Matrix](Confusion-Matrix.png)
+![Confusion-Matrix](../Figures/Confusion-Matrix.png)
 ## K-Folds Cross-Validation
 **K-Folds Cross-Validation** is a technique used to evaluate the performance of machine learning models. It is primarily used to assess how well a model generalizes to unseen data by dividing the dataset into multiple parts (or "folds") and training the model multiple times, each time using a different fold for validation.
 
@@ -252,7 +252,7 @@ from sklearn.datasets import load_iris
 **K-Nearest Neighbors (KNN)** is a simple and powerful algorithm used for both **classification** and **regression** tasks. It makes predictions based on the closest labeled data points in the feature space.
 **Mathematical Formula**:
 
-![KNN](KNN.png)
+![KNN](../Figures/KNN.png)
 **Implementation**
 ```python 
 from sklearn.neighbors import KNeighborsClassifier
@@ -265,7 +265,7 @@ print(model.predict(X_test))
 **Support Vector Machine (SVM)** is a supervised machine learning algorithm primarily used for **classification** tasks but can also be adapted for **regression** (known as Support Vector Regression or SVR). The goal of SVM is to find the **hyperplane** that best separates the data into different classes with the **maximum margin**.
 
 **Mathematical Formula:**
-![SVM](SVM.png)
+![SVM](../Figures/SVM.png)
 **Implementation** 
 ```python
 from sklearn.svm import SVC

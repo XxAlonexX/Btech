@@ -91,7 +91,7 @@ int main() {
 ### Master Theorem
 **Master's theorem** is a tool used to solve recurrence relations of the form:
 
-![Master's Theorem](Masters-Theoram.png)
+![Master's Theorem](./Images/Masters-Theoram.png)
 
 Here:
 - a: The number of subproblems at each level.

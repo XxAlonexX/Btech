@@ -184,7 +184,7 @@ print("A* Search Path:", path)
 
 ## Uninformed Search vs Informed Search
 
-![Diffrence-Between-Informed&Uninformed](Diffrence-Between-Informed&Uninformed.png)
+![Diffrence-Between-Informed&Uninformed](../Figures/Diffrence-Between-Informed&Uninformed.png)
 
 ________________________________________________________________________
 
@@ -234,7 +234,7 @@ print("Simulated Annealing Result:", result)
 ```
 
 
-![Key Diagram](Diffrence-Between-Hill-&-Simulated.png)
+![Key Diagram](../Figures/Diffrence-Between-Hill-&-Simulated.png)
 
 #### Libraries
 `SciPy` for optimisation problems:

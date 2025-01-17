@@ -29,7 +29,7 @@ There are various types of clustering methods, and the main ones include:
 4. Repeat steps 2 and 3 until convergence (centroids do not change).
  
 **Formula**: The objective is to minimize the **within-cluster sum of squares (WCSS)**:
-![K-Means](K-Means.png)
+![K-Means](../Figures/K-Means.png)
 
 **Implementation**
 ```python 

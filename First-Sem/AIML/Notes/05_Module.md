@@ -4,7 +4,7 @@ Probabilistic learning is a machine learning approach based on probability theor
 Bayesian learning is a probabilistic approach where the Bayes' theorem is used to update the probability of a hypothesis as more evidence or data becomes available.
 
 **Bayes' Theorem**:
-![Bayes' Theorem](Bayes-Theorem.png)
+![Bayes' Theorem](../Figures/Bayes-Theorem.png)
 Where:
 
 - **P(H∣E)**: Posterior probability (probability of hypothesis H given evidence E).
@@ -52,7 +52,7 @@ Ensemble learning combines multiple models (weak learners) to improve the overal
 1. **Bagging (Bootstrap Aggregating)**: Combines models by averaging predictions (e.g., Random Forest).
 2. **Boosting**: Focuses on learning from the mistakes of previous models (e.g., Gradient Boosting, XGBoost).
 
-![Ensemble-Learning](Ensemble-Learning.png)
+![Ensemble-Learning](../Figures/Ensemble-Learning.png)
 ## Random Forest
 Random Forest is an ensemble learning method that combines multiple decision trees to make a prediction.
 
@@ -108,8 +108,8 @@ MDP provides a mathematical framework for decision-making in RL.
 ### Q-Learning
 Q-Learning is a value-based RL algorithm to learn the optimal policy by updating Q-values:
 
-![Q-Learning](Q-Learning.png)
-![Q-Learning(Equation)](Q-Learning(Equation).png)
+![Q-Learning](../Figures/Q-Learning.png)
+![Q-Learning(Equation)](../Figures/Q-Learning(Equation).png)
 
 ```python
 import numpy as np
