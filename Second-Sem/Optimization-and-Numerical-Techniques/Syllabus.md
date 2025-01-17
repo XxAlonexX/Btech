@@ -52,9 +52,7 @@
 
 ---
 
-### **Beyond the Syllabus – Mastering Optimization & Numerical Techniques**
-
-If you want **deep mastery** of the subject, here are additional topics:
+# Important
 
 #### **Advanced Optimization**
 

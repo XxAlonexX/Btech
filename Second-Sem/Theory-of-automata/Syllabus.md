@@ -51,9 +51,7 @@
 
 ---
 
-### **Beyond the Syllabus – Mastering Automata & Formal Languages**
-
-If you want to go beyond the syllabus and master this subject, here are additional topics:
+# Important
 
 #### **Advanced Automata Theory**
 

@@ -44,9 +44,7 @@
 
 ---
 
-### **Beyond the Syllabus – Mastering Operating Systems**
-
-If you want to go beyond the syllabus and master OS concepts, here are advanced topics:
+# Important
 
 #### **Advanced Process & Thread Management**
 

@@ -42,9 +42,7 @@
 
 ---
 
-### **Beyond the Syllabus – Mastering Technical Communication**
-
-If you want to go beyond the syllabus and master technical communication, here are additional topics:
+# Important
 
 #### **Advanced Writing & Editing Techniques**
 

@@ -47,11 +47,7 @@
 - Cloud Databases & Big Data
 
 ---
-
-### **Beyond the Syllabus – Mastering DBMS**
-
-If you want to go beyond the syllabus and master DBMS, here are additional topics:
-
+# Important
 #### **Advanced SQL & Query Optimization**
 
 - Window Functions, Common Table Expressions (CTE), Recursive Queries
