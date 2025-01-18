@@ -82,14 +82,14 @@ Cardinality defines **how many instances** of an entity can be related to anothe
 
 #### **Types of Cardinality**
 
-| ER Model Concept  | Example Game Mechanic | Relational Model Conversion |
-|-------------------|----------------------|-----------------------------|
-| **Entities → Tables** | **NPCs & Locations (Elden Ring)** | Each entity becomes a table with attributes as columns. |
-| **Relationships → Foreign Keys** | **NPCs belonging to Locations** | Use foreign keys to establish connections. |
-| **Weak Entities → Foreign Keys + Cascade Delete** | **Persona in Persona 5** | Weak entities rely on a strong entity (foreign key). |
-| **Multi-Valued Attributes → Separate Table** | **Player Inventory (MMORPGs)** | Many-to-Many relationship with a bridge table. |
-| **Generalization → Superclass/Subclass Tables** | **Class System in RPGs (Warrior, Mage, Rogue)** | One main table, sub-tables for unique attributes. |
-| **Aggregation → Higher-Level Relationships** | **Guilds managing Quests in ESO** | Treat relationships as separate entities. |
+| ER Model Concept                                  | Example Game Mechanic                           | Relational Model Conversion                             |
+| ------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------- |
+| **Entities → Tables**                             | **NPCs & Locations (Elden Ring)**               | Each entity becomes a table with attributes as columns. |
+| **Relationships → Foreign Keys**                  | **NPCs belonging to Locations**                 | Use foreign keys to establish connections.              |
+| **Weak Entities → Foreign Keys + Cascade Delete** | **Persona in Persona 5**                        | Weak entities rely on a strong entity (foreign key).    |
+| **Multi-Valued Attributes → Separate Table**      | **Player Inventory (MMORPGs)**                  | Many-to-Many relationship with a bridge table.          |
+| **Generalization → Superclass/Subclass Tables**   | **Class System in RPGs (Warrior, Mage, Rogue)** | One main table, sub-tables for unique attributes.       |
+| **Aggregation → Higher-Level Relationships**      | **Guilds managing Quests in ESO**               | Treat relationships as separate entities.               |
 
 **Example** :
 ```
