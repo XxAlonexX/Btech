@@ -254,9 +254,3 @@ The **Enhanced Entity-Relationship (EER) Model** is an extension of the traditio
 | **Categorization** | Enables an entity to belong to multiple superclasses.                           | `Person` is both `Student` and `Employee`    |
 
 ---
-
-### Why Use the EER Model?
-
-- **Supports Complex Relationships:** Handles multi-level hierarchies and intricate data structures.
-- **Better Abstraction:** Provides advanced features like inheritance and aggregation for clearer modeling.
-- **Real-World Applications:** Widely used in industries such as banking, HR systems, and enterprise databases to manage complex data efficiently.

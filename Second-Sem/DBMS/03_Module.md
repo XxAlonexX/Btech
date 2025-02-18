@@ -270,3 +270,66 @@ EXPLAIN SELECT name FROM Players WHERE level > 50;
 | Query Caching          | Quick-load feature in games            | Reuse frequent queries         |
 | Use LIMIT              | Show only Top 10 in a leaderboard      | Fetch only necessary data      |
 | EXPLAIN Query          | Debugging game performance             | Analyze and improve SQL queries|
+
+
+### Why Use the EER Model?
+
+- **Supports Complex Relationships:** Handles multi-level hierarchies and intricate data structures.
+- **Better Abstraction:** Provides advanced features like inheritance and aggregation for clearer modeling.
+- **Real-World Applications:** Widely used in industries such as banking, HR systems, and enterprise databases to manage complex data efficiently.
+
+# **DBMS Constraints**
+
+## **1. Constraint Types & Descriptions**
+| **Constraint Type**       | **Description** | **Example** |
+|--------------------------|----------------|----------------|
+| **Domain Constraints** | Ensures values fall within a specified range or domain. | A player's **level** must be between **1 and 100**. |
+| **Entity Integrity** | Ensures each row is uniquely identifiable (**Primary Key**). | Each **Character_ID** in an RPG must be **unique and non-null**. |
+| **Referential Integrity** | Ensures relationships between tables remain consistent (**Foreign Keys**). | A **Quest_ID** in the **Quests Completed** table must exist in the **Quests** table. |
+| **Key Constraints** | Ensures uniqueness of primary and candidate keys. | Every **Weapon_ID** in the inventory must be **unique**. |
+| **User-Defined Constraints** | Custom rules defined by the database designer. | A player’s **health** must always be **≥ 0** (no negative HP). |
+| **NOT NULL Constraint** | Ensures a column cannot have NULL values. | A game character’s **username** cannot be **NULL**. |
+| **CHECK Constraint** | Ensures a column meets a specific condition. | A **weapon’s damage** must be between **10 and 500**. |
+| **Cascade Constraints** | Defines how changes in one table affect related tables. | If a **Guild** is deleted, all its **members** are also removed. |
+
+---
+
+## **2. Primary Key & Unique Key**
+### **Primary Key (PK)**
+- Uniquely identifies each record.
+- Cannot have NULL values.
+  
+```sql
+CREATE TABLE Players (
+    Player_ID INT PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL,
+    Level INT CHECK (Level BETWEEN 1 AND 100)
+);
+```
+### *Unique Key*
+Ensures values are unique but allows NULL values.
+```sql
+CREATE TABLE Weapons (
+    Weapon_ID INT PRIMARY KEY,
+    Weapon_Name VARCHAR(50) UNIQUE,
+    Damage INT CHECK (Damage BETWEEN 10 AND 500)
+);
+```
+### *Trigers*
+Triggers execute automatically when a specific event (INSERT, UPDATE, DELETE) occurs.
+```sql
+CREATE TRIGGER UpdateXP
+AFTER INSERT ON Battles
+FOR EACH ROW
+UPDATE Players SET XP = XP + 100 WHERE Player_ID = NEW.Player_ID;
+```
+### *Assertions*
+Ensures a condition holds for the entire database.
+```sql
+CREATE ASSERTION MaxPlayersInGuild
+CHECK (NOT EXISTS (
+    SELECT Guild_ID FROM Guilds
+    GROUP BY Guild_ID
+    HAVING COUNT(Player_ID) > 100
+));
+```
