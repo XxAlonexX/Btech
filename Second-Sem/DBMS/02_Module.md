@@ -192,9 +192,6 @@ The ER Model is a high-level **conceptual design**, while the Relational Model i
 
 ## Reducing ER Diagrams in DBMS
 
-Simplifying an Entity-Relationship (ER) Diagram is like optimizing a game's skill tree—you remove unnecessary branches, combine similar skills, and streamline the structure to make it more efficient and easier to navigate. Below are the steps to simplify an ER Diagram, with game-inspired analogies to help you understand the process better.
-
----
 
 ### Steps to Simplify an ER Diagram
 
