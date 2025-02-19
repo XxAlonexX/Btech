@@ -332,3 +332,24 @@ CHECK (NOT EXISTS (
     HAVING COUNT(Player_ID) > 100
 ));
 ```
+
+# Data Constrainsts 
+| Constraint Type | Definition                                                                 | Characteristics                                                                 | Example                                                                 |
+|-----------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **NULL**        | Allows a column to have no value (empty/undefined).                        | - Indicates missing/unknown data.<br>- Different from empty strings/zeros.     | `Age` in `Employees` table can be NULL if unknown.                      |
+| **NOT NULL**    | Ensures a column must always have a value (no NULLs allowed).              | - Enforces mandatory fields.<br>- Prevents incomplete records.                 | `EmpID` and `Name` columns in `Employees` table cannot be NULL.         |
+| **DEFAULT**     | Provides a default value if no value is specified during insertion.        | - Sets a fallback value for optional fields.<br>- Value must match data type.  | `Department` defaults to `HR` if not specified.                          |
+| **CHECK**       | Enforces that column values meet a specified condition/expression.         | - Validates data ranges/patterns.<br>- Applied to single/multiple columns.     | `Age` must be ≥ 18 in `Employees` table.                                |
+
+- **Purpose:**  Ensure data integrity, accuracy, and consistency by restricting invalid data entry.
+- **Implementation:** Applied at the column level in table schemas (e.g., CREATE TABLE statements).
+- **Syntax:**
+  ```sql
+  CREATE TABLE Employees (
+      EmpID INT NOT NULL,
+      Name VARCHAR(50) NOT NULL,
+      Age INT CHECK (Age >= 18),
+      Department VARCHAR(20) DEFAULT 'HR'
+    );
+  ```
+
