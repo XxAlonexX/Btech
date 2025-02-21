@@ -34,6 +34,102 @@ ROLLBACK → Undoes changes made within a transaction.
 SAVEPOINT → Creates checkpoints to rollback to a specific point if needed.
 ```
 ---
+
+# Lossy and Lossless Decomposition
+Decomposition is the process of breaking down a database schema into smaller schemas to eliminate redundancy and improve data integrity. There are two types of decomposition: Lossy and Lossless.
+
+#### 1. Lossless Decomposition
+Ensures that no data is lost when decomposing a table into two or more tables. The original table can be perfectly reconstructed by joining the decomposed tables.
+
+**Example:**
+In **The Elder Scrolls V: Skyrim**, suppose we have a table `Characters` with the following attributes:
+- `Character_ID`
+- `Character_Name`
+- `Guild_ID`
+- `Guild_Name`
+
+To eliminate redundancy, we decompose it into two tables: `Characters` and `Guilds`.
+
+**Original Table:**
+```sql
+CREATE TABLE Characters (
+    Character_ID INT,
+    Character_Name VARCHAR(50),
+    Guild_ID INT,
+    Guild_Name VARCHAR(50)
+);
+```
+
+**Decomposed Tables:**
+```sql
+CREATE TABLE Characters (
+    Character_ID INT,
+    Character_Name VARCHAR(50),
+    Guild_ID INT
+);
+
+CREATE TABLE Guilds (
+    Guild_ID INT,
+    Guild_Name VARCHAR(50)
+);
+```
+
+**Reconstruction:**
+```sql
+SELECT Characters.Character_ID, Characters.Character_Name, Guilds.Guild_ID, Guilds.Guild_Name
+FROM Characters
+INNER JOIN Guilds ON Characters.Guild_ID = Guilds.Guild_ID;
+```
+
+#### 2. Lossy Decomposition
+Occurs when some information is lost during the decomposition process, making it impossible to perfectly reconstruct the original table.
+
+**Example:**
+In **Dark Souls**, suppose we have a table `Weapons` with the following attributes:
+- `Weapon_ID`
+- `Weapon_Name`
+- `Damage`
+- `Weight`
+
+If we decompose it into two tables: `Weapons_Damage` and `Weapons_Weight`, we might lose some information about the relationship between `Damage` and `Weight`.
+
+**Original Table:**
+```sql
+CREATE TABLE Weapons (
+    Weapon_ID INT,
+    Weapon_Name VARCHAR(50),
+    Damage INT,
+    Weight INT
+);
+```
+
+**Decomposed Tables:**
+```sql
+CREATE TABLE Weapons_Damage (
+    Weapon_ID INT,
+    Weapon_Name VARCHAR(50),
+    Damage INT
+);
+
+CREATE TABLE Weapons_Weight (
+    Weapon_ID INT,
+    Weapon_Name VARCHAR(50),
+    Weight INT
+);
+```
+
+**Loss of Information:**
+When we try to join `Weapons_Damage` and `Weapons_Weight`, we might not be able to accurately reconstruct the original `Weapons` table because the relationship between `Damage` and `Weight` is lost.
+
+```sql
+SELECT Weapons_Damage.Weapon_ID, Weapons_Damage.Weapon_Name, Weapons_Damage.Damage, Weapons_Weight.Weight
+FROM Weapons_Damage
+INNER JOIN Weapons_Weight ON Weapons_Damage.Weapon_ID = Weapons_Weight.Weapon_ID;
+```
+
+In this case, the decomposition is lossy because we cannot guarantee the accurate reconstruction of the original table.
+
+---
 # Advanced SQL Queries
 #### 1. Joins – Combining Data from Multiple Tables
 Used to retrieve data by linking two or more tables based on a common column.
@@ -339,17 +435,4 @@ CHECK (NOT EXISTS (
 | **NULL**        | Allows a column to have no value (empty/undefined).                        | - Indicates missing/unknown data.<br>- Different from empty strings/zeros.     | `Age` in `Employees` table can be NULL if unknown.                      |
 | **NOT NULL**    | Ensures a column must always have a value (no NULLs allowed).              | - Enforces mandatory fields.<br>- Prevents incomplete records.                 | `EmpID` and `Name` columns in `Employees` table cannot be NULL.         |
 | **DEFAULT**     | Provides a default value if no value is specified during insertion.        | - Sets a fallback value for optional fields.<br>- Value must match data type.  | `Department` defaults to `HR` if not specified.                          |
-| **CHECK**       | Enforces that column values meet a specified condition/expression.         | - Validates data ranges/patterns.<br>- Applied to single/multiple columns.     | `Age` must be ≥ 18 in `Employees` table.                                |
-
-- **Purpose:**  Ensure data integrity, accuracy, and consistency by restricting invalid data entry.
-- **Implementation:** Applied at the column level in table schemas (e.g., CREATE TABLE statements).
-- **Syntax:**
-  ```sql
-  CREATE TABLE Employees (
-      EmpID INT NOT NULL,
-      Name VARCHAR(50) NOT NULL,
-      Age INT CHECK (Age >= 18),
-      Department VARCHAR(20) DEFAULT 'HR'
-    );
-  ```
-
+| **CHECK**       | Enforces that column values meet a specified condition/expression.         | - Validates data ranges/patterns.<br>- Applied to single/multiple columns.     | `Age` must be ≥ 18 in `Employe
